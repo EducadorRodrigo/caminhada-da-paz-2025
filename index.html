@@ -1,0 +1,116 @@
+<!-- Vídeo de Criação do Carrossel -> https://www.youtube.com/watch?v=sk7mgXO-FeQ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Abaixo, Links do CSS Principal, do CSS do Carrossel e do Ícone da Aba (nesta ordem) -->
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/carrossel.css">
+    <link rel="icon" href="img/logotipo.png" type="image/png">
+    <!-- Abaixo, Link do arquivo JavaScript - Funcionamento do Carrossel -->
+    <script type="text/javascript" src="JS/scripts.js" defer> </script>
+    <title> Início - Caminhada da Paz </title>
+</head>
+
+<body>
+    <!-- Cabeçalho do Site - Menu Principal (Topo) -->
+    <header>
+        <h1 class="titulo_inicial"> 3ª Caminhada da Paz - Jd. IV Centenário </h1>
+            <nav>
+                <ul>
+                    <li> <a href ="#"> Home </a> </li>
+                    <li> <a href ="paginas/sobre.html"> Sobre o Evento </a> </li>
+                    <li> <a href ="paginas/caminhada25.html"> Caminhada 2025 </a> </li>
+                </ul>
+            </nav>
+    </header>
+
+    <!-- Seção - Carrossel de Fotos -->
+    <section id="carrossel">
+        <h1> Por uma cultura da paz, e pela Ecologia Integral </h1>
+            <div id ="carrossel-itens">
+                <input type="radio" name="botao-radio" id="radio1">
+                <input type="radio" name="botao-radio" id="radio2">
+                <input type="radio" name="botao-radio" id="radio3">
+                <input type="radio" name="botao-radio" id="radio4">
+
+                <div class="imagem-carrossel inicio">
+                    <img src="img/carrossel-img01.jpg" alt="Imagem 1">
+                </div>
+
+                <div class="imagem-carrossel">
+                    <img src="img/carrossel-img02.jpg" alt="Imagem 2">
+                </div>
+
+                <div class="imagem-carrossel">
+                    <img src="img/carrossel-img03.jpg" alt="Imagem 3">
+                </div>
+
+                <div class="imagem-carrossel">
+                    <img src="img/carrossel-img04.jpg" alt="Imagem 4">
+                </div>
+
+                <div class="navega-auto">
+                    <div class="auto-botao1"> </div>
+                    <div class="auto-botao2"> </div>
+                    <div class="auto-botao3"> </div>
+                    <div class="auto-botao4"> </div>
+                </div>
+
+                <div class="navega-manual">
+                    <label for="radio1" class="manual-botao"> </label>
+                    <label for="radio2" class="manual-botao"> </label>
+                    <label for="radio3" class="manual-botao"> </label>
+                    <label for="radio4" class="manual-botao"> </label>
+                </div>
+                
+            </div>
+    </section>
+
+    <!-- Bloco de Texto sobre a Caminhada -->
+        <p class="card"> Em 2025, com o tema <em>"Por uma cultura da paz e pela Ecologia Integral"</em>, a
+            Caminhada da Paz é um encontro organizado anualmente, com o objetivo de promover a paz em nossa região.<br> 
+            Realizado na Zona Leste de São Paulo, na região do Jardim IV Centenário, o evento conta com a 
+            presença de toda a comunidade local para a promoção da paz, contando com intervenções artísticas,
+            culturais, religiosas e musicais, que reforçam a união e a paz entre todos, independente de cor,
+            religião, orientação sexual, idade ou sexo.
+        </p>
+
+    <!-- Grid - 4 Quadros com Foto e Texto abaixo -->
+    <h1> Grupos Presentes na Caminhada </h1>
+
+    <div class ="grid_grupos">
+
+        <div class ="grupo">
+            <img src ="img/grid-img01.jpg" width ="100%">
+            <h2> Crianças </h2>
+        </div>
+
+        <div class ="grupo">
+            <img src ="img/grid-img02.jpg" width ="100%">
+            <h2> Jovens </h2>
+        </div>
+
+        <div class ="grupo">
+            <img src ="img/grid-img03.png" width ="100%">
+            <h2> Espaços Religiosos </h2>
+        </div>
+
+        <div class ="grupo">
+            <img src ="img/grid-img04.png" width ="100%">
+            <h2> Grupos Artísticos </h2>
+        </div>
+
+    </div>
+
+    <!-- Rodapé do Site - Logotipo da Caminhada, Versículo e Copyright -->
+    <footer>
+        <img src ="img/logotipo.png" width ="7%">
+        <p id="versiculo"> "Deus viu que tudo era bom." (Gênesis 1:31) </p>
+        <p class="texto-footer"> Copyright © 2025 - CCP Santa Úrsula | WEB x </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* Estilizações aplicadas ao Carrossel da Página Principal */
+
+#carrossel {
+    margin: 0px auto;
+    width: 95%;
+    height: auto;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#carrossel-itens {
+    width: 400%;
+    height: auto;
+    display: flex;
+}   
+
+#carrossel-itens input {
+    display: none;
+}
+
+.imagem-carrossel {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.imagem-carrossel img {
+    width: 95%;
+}
+
+.navega-manual, .navega-auto {
+    position: absolute;
+    width: 95%;
+    margin-top: 47%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-botao, .navega-auto div {
+    border: 2px solid #F6CC17;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-botao:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-botao:hover {
+    background-color: #000000;
+}
+
+.navega-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* PARAMOS AQUI - WEB 2 - 30/09 */
+
+#radio1:checked ~ .navega-auto .auto-botao1 {
+    background-color: #000000;
+}
+
+#radio2:checked ~ .navega-auto .auto-botao2 {
+    background-color: #000000;
+}
+
+#radio3:checked ~ .navega-auto .auto-botao3 {
+    background-color: #000000;
+}
+
+#radio4:checked ~ .navega-auto .auto-botao4 {
+    background-color: #000000;
+}
+
+#radio1:checked ~ .inicio {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .inicio {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .inicio {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .inicio {
+    margin-left: -75%;
+}
